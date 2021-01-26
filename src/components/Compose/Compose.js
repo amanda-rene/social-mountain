@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProfileIcon from 'react-icons/lib/md/person-outline';
-
+import axios from 'axios'
 import './Compose.css';
 
 //////////////////////////////////////////////////////// THIS COMPONENT IS BEING RENDERED IN THE *APP* COMPONENT
@@ -28,6 +28,7 @@ export default class Compose extends Component {
     // Destructuring
     const { text } = this.state;
 
+    
     return (
       <section className="Compose__parent">
         <div className="Compose__top">
